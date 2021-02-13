@@ -8,14 +8,59 @@
 
 import UIKit
 import CoreData
+import Firebase
+import IQKeyboardManagerSwift
+import FirebaseCore
+import FirebaseFirestore
 
+extension UIStoryboard{
+   static let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+}
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
+    
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    var rootNavigationViewController: UINavigationController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        IQKeyboardManager.shared.enable = true
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+        let userRef = db.collection("users").document("iLICnOG5msxgCdTm3f48").collection("MemoBooks").document("3fsl0SVBwpQnffouZTrD")
+        
+        userRef.getDocument { (document, error) in
+            
+        }
+        return true
+        ///#########################
+        db.collection("users").getDocuments() { (querySnapshot, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            if let querySnapshot = querySnapshot {
+                for doc in querySnapshot.documents {
+                    print(doc.data())
+                    let refArray = doc.data() ["memosArray"] as? [DocumentReference] ?? []
+                    db.collection("memos")
+                    print(refArray.count)
+                    for docRef in refArray {
+                       print(docRef.path)
+                        docRef.getDocument { (querySnapshot, error) in
+                            print(querySnapshot?.data()?["title"] as! String)
+                        }
+                    }
+                    print("s")
+                }
+            }
+        }
         return true
     }
 
@@ -76,6 +121,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+
+}
+
+
+
+
+public struct City: Codable {
+
+    let name: String
+    let state: String?
+    let country: String?
+    let isCapital: Bool?
+    let population: Int64?
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case state
+        case country
+        case isCapital = "capital"
+        case population
     }
 
 }

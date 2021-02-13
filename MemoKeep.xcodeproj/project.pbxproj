@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5522BCD220C0FBE4B785B396 /* Pods_MemoKeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E424A6D54C83D4625FE30230 /* Pods_MemoKeep.framework */; };
+		A6448AD125D493A500323958 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AD025D493A500323958 /* AddMemoViewController.swift */; };
+		A6448AD325D4A30900323958 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AD225D4A30900323958 /* MemosViewController.swift */; };
+		A6448AD625D4A66700323958 /* AddNewNoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AD425D4A66700323958 /* AddNewNoteCollectionViewCell.swift */; };
+		A6448AD725D4A66700323958 /* AddNewNoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6448AD525D4A66700323958 /* AddNewNoteCollectionViewCell.xib */; };
+		A6448ADA25D4B21600323958 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AD825D4B21600323958 /* NoteCollectionViewCell.swift */; };
+		A6448ADB25D4B21600323958 /* NoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6448AD925D4B21600323958 /* NoteCollectionViewCell.xib */; };
+		A6448ADF25D51FEF00323958 /* MemoBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448ADD25D51FEF00323958 /* MemoBookTableViewCell.swift */; };
+		A6448AE025D51FEF00323958 /* MemoBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6448ADE25D51FEF00323958 /* MemoBookTableViewCell.xib */; };
+		A6448AE225D5244A00323958 /* MemoBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AE125D5244A00323958 /* MemoBooksViewController.swift */; };
+		A6448AE425D52B7700323958 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AE325D52B7700323958 /* FirstViewController.swift */; };
+		A6448AE925D530C600323958 /* MemoColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6448AE825D530C600323958 /* MemoColorCollectionViewCell.swift */; };
 		A688DC4125D3BB0500B30C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4025D3BB0500B30C98 /* AppDelegate.swift */; };
 		A688DC4325D3BB0500B30C98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4225D3BB0500B30C98 /* SceneDelegate.swift */; };
 		A688DC4525D3BB0500B30C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4425D3BB0500B30C98 /* ViewController.swift */; };
@@ -14,9 +26,46 @@
 		A688DC4B25D3BB0500B30C98 /* MemoKeep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4925D3BB0500B30C98 /* MemoKeep.xcdatamodeld */; };
 		A688DC4D25D3BB0B00B30C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4C25D3BB0B00B30C98 /* Assets.xcassets */; };
 		A688DC5025D3BB0B00B30C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4E25D3BB0B00B30C98 /* LaunchScreen.storyboard */; };
+		A688DC5825D3BB3000B30C98 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5725D3BB3000B30C98 /* CustomTabBar.swift */; };
+		A688DC6725D3BF0A00B30C98 /* UIlabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5A25D3BF0A00B30C98 /* UIlabelExtension.swift */; };
+		A688DC6825D3BF0A00B30C98 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5B25D3BF0A00B30C98 /* HexColorExtension.swift */; };
+		A688DC6A25D3BF0A00B30C98 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5D25D3BF0A00B30C98 /* UITextFieldExtension.swift */; };
+		A688DC6B25D3BF0A00B30C98 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5E25D3BF0A00B30C98 /* UIButtonExtension.swift */; };
+		A688DC6C25D3BF0A00B30C98 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5F25D3BF0A00B30C98 /* UIImageViewExtension.swift */; };
+		A688DC6D25D3BF0A00B30C98 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6025D3BF0A00B30C98 /* DateExtension.swift */; };
+		A688DC6E25D3BF0A00B30C98 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6125D3BF0A00B30C98 /* UINavigationBarExtension.swift */; };
+		A688DC6F25D3BF0A00B30C98 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6225D3BF0A00B30C98 /* UIViewControllerExtension.swift */; };
+		A688DC7025D3BF0A00B30C98 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6325D3BF0A00B30C98 /* UIViewExtension.swift */; };
+		A688DC7125D3BF0A00B30C98 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6425D3BF0A00B30C98 /* String.swift */; };
+		A688DC7225D3BF0A00B30C98 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6525D3BF0A00B30C98 /* UITextViewExtension.swift */; };
+		A688DC7325D3BF0A00B30C98 /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC6625D3BF0A00B30C98 /* UITabBarExtension.swift */; };
+		A688DC7525D3C33000B30C98 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC7425D3C33000B30C98 /* Constant.swift */; };
+		A688DC7825D3C52900B30C98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A688DC7725D3C52900B30C98 /* GoogleService-Info.plist */; };
+		A688DC7B25D3C80400B30C98 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC7A25D3C80400B30C98 /* UserProfile.swift */; };
+		A688DC7E25D3D2D700B30C98 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC7D25D3D2D700B30C98 /* ForgetPasswordViewController.swift */; };
+		A688DC8225D3D45100B30C98 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC8125D3D45100B30C98 /* ResetPasswordViewController.swift */; };
+		A688DC8325D3DA0400B30C98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC7F25D3D42500B30C98 /* LoginViewController.swift */; };
+		A688DC9125D40BCA00B30C98 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC8F25D40BCA00B30C98 /* ColorCollectionViewCell.swift */; };
+		A688DC9225D40BCA00B30C98 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A688DC9025D40BCA00B30C98 /* ColorCollectionViewCell.xib */; };
+		A688DC9625D40DAD00B30C98 /* MemosListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC9425D40DAD00B30C98 /* MemosListTableViewCell.swift */; };
+		A688DC9725D40DAD00B30C98 /* MemosListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A688DC9525D40DAD00B30C98 /* MemosListTableViewCell.xib */; };
+		A6F5CC8C25D8323300952B2B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC8B25D8323300952B2B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063CBAE9F90C780C636E66AA /* Pods-MemoKeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoKeep.release.xcconfig"; path = "Target Support Files/Pods-MemoKeep/Pods-MemoKeep.release.xcconfig"; sourceTree = "<group>"; };
+		5503519A3EE9CF0453CF8EF0 /* Pods-MemoKeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoKeep.debug.xcconfig"; path = "Target Support Files/Pods-MemoKeep/Pods-MemoKeep.debug.xcconfig"; sourceTree = "<group>"; };
+		A6448AD025D493A500323958 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
+		A6448AD225D4A30900323958 /* MemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
+		A6448AD425D4A66700323958 /* AddNewNoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6448AD525D4A66700323958 /* AddNewNoteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewNoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6448AD825D4B21600323958 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6448AD925D4B21600323958 /* NoteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6448ADD25D51FEF00323958 /* MemoBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoBookTableViewCell.swift; sourceTree = "<group>"; };
+		A6448ADE25D51FEF00323958 /* MemoBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoBookTableViewCell.xib; sourceTree = "<group>"; };
+		A6448AE125D5244A00323958 /* MemoBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoBooksViewController.swift; sourceTree = "<group>"; };
+		A6448AE325D52B7700323958 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A6448AE825D530C600323958 /* MemoColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		A688DC3D25D3BB0500B30C98 /* MemoKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A688DC4025D3BB0500B30C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A688DC4225D3BB0500B30C98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +75,31 @@
 		A688DC4C25D3BB0B00B30C98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A688DC4F25D3BB0B00B30C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A688DC5125D3BB0B00B30C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A688DC5725D3BB3000B30C98 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		A688DC5A25D3BF0A00B30C98 /* UIlabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIlabelExtension.swift; path = MemoKeep/Extensions/UIlabelExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC5B25D3BF0A00B30C98 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexColorExtension.swift; path = MemoKeep/Extensions/HexColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC5D25D3BF0A00B30C98 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExtension.swift; path = MemoKeep/Extensions/UITextFieldExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC5E25D3BF0A00B30C98 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = MemoKeep/Extensions/UIButtonExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC5F25D3BF0A00B30C98 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = MemoKeep/Extensions/UIImageViewExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6025D3BF0A00B30C98 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = MemoKeep/Extensions/DateExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6125D3BF0A00B30C98 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationBarExtension.swift; path = MemoKeep/Extensions/UINavigationBarExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6225D3BF0A00B30C98 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = MemoKeep/Extensions/UIViewControllerExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6325D3BF0A00B30C98 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = MemoKeep/Extensions/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6425D3BF0A00B30C98 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = MemoKeep/Extensions/String.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6525D3BF0A00B30C98 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextViewExtension.swift; path = MemoKeep/Extensions/UITextViewExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC6625D3BF0A00B30C98 /* UITabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITabBarExtension.swift; path = MemoKeep/Extensions/UITabBarExtension.swift; sourceTree = SOURCE_ROOT; };
+		A688DC7425D3C33000B30C98 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A688DC7725D3C52900B30C98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A688DC7A25D3C80400B30C98 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A688DC7D25D3D2D700B30C98 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		A688DC7F25D3D42500B30C98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A688DC8125D3D45100B30C98 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		A688DC8F25D40BCA00B30C98 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		A688DC9025D40BCA00B30C98 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		A688DC9425D40DAD00B30C98 /* MemosListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosListTableViewCell.swift; sourceTree = "<group>"; };
+		A688DC9525D40DAD00B30C98 /* MemosListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemosListTableViewCell.xib; sourceTree = "<group>"; };
+		A6F5CC8B25D8323300952B2B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E424A6D54C83D4625FE30230 /* Pods_MemoKeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoKeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +107,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5522BCD220C0FBE4B785B396 /* Pods_MemoKeep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53A3E9044EC8E2A9BA26DA94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5503519A3EE9CF0453CF8EF0 /* Pods-MemoKeep.debug.xcconfig */,
+				063CBAE9F90C780C636E66AA /* Pods-MemoKeep.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6448ADC25D51FB600323958 /* MemoBook */ = {
+			isa = PBXGroup;
+			children = (
+				A6448ADD25D51FEF00323958 /* MemoBookTableViewCell.swift */,
+				A6448ADE25D51FEF00323958 /* MemoBookTableViewCell.xib */,
+			);
+			path = MemoBook;
+			sourceTree = "<group>";
+		};
+		A6448AE525D5304700323958 /* ColorCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6448AE825D530C600323958 /* MemoColorCollectionViewCell.swift */,
+			);
+			path = ColorCell;
+			sourceTree = "<group>";
+		};
 		A688DC3425D3BB0500B30C98 = {
 			isa = PBXGroup;
 			children = (
 				A688DC3F25D3BB0500B30C98 /* MemoKeep */,
 				A688DC3E25D3BB0500B30C98 /* Products */,
+				53A3E9044EC8E2A9BA26DA94 /* Pods */,
+				A991EAF4CE12D19D2F7690D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +161,130 @@
 		A688DC3F25D3BB0500B30C98 /* MemoKeep */ = {
 			isa = PBXGroup;
 			children = (
+				A6F5CC8A25D8321200952B2B /* Model */,
+				A688DC7C25D3D2B500B30C98 /* ViewControllers */,
+				A688DC7925D3C7F300B30C98 /* Commen */,
+				A688DC7625D3C50A00B30C98 /* SupportFiles */,
+				A688DC5925D3BEDD00B30C98 /* New Group */,
 				A688DC4025D3BB0500B30C98 /* AppDelegate.swift */,
 				A688DC4225D3BB0500B30C98 /* SceneDelegate.swift */,
-				A688DC4425D3BB0500B30C98 /* ViewController.swift */,
 				A688DC4625D3BB0500B30C98 /* Main.storyboard */,
 				A688DC4C25D3BB0B00B30C98 /* Assets.xcassets */,
 				A688DC4E25D3BB0B00B30C98 /* LaunchScreen.storyboard */,
 				A688DC5125D3BB0B00B30C98 /* Info.plist */,
 				A688DC4925D3BB0500B30C98 /* MemoKeep.xcdatamodeld */,
+				A688DC5725D3BB3000B30C98 /* CustomTabBar.swift */,
 			);
 			path = MemoKeep;
+			sourceTree = "<group>";
+		};
+		A688DC5925D3BEDD00B30C98 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A688DC6025D3BF0A00B30C98 /* DateExtension.swift */,
+				A688DC5B25D3BF0A00B30C98 /* HexColorExtension.swift */,
+				A688DC6425D3BF0A00B30C98 /* String.swift */,
+				A688DC5E25D3BF0A00B30C98 /* UIButtonExtension.swift */,
+				A688DC5F25D3BF0A00B30C98 /* UIImageViewExtension.swift */,
+				A688DC5A25D3BF0A00B30C98 /* UIlabelExtension.swift */,
+				A688DC6125D3BF0A00B30C98 /* UINavigationBarExtension.swift */,
+				A688DC6625D3BF0A00B30C98 /* UITabBarExtension.swift */,
+				A688DC5D25D3BF0A00B30C98 /* UITextFieldExtension.swift */,
+				A688DC6525D3BF0A00B30C98 /* UITextViewExtension.swift */,
+				A688DC6225D3BF0A00B30C98 /* UIViewControllerExtension.swift */,
+				A688DC6325D3BF0A00B30C98 /* UIViewExtension.swift */,
+				A688DC7425D3C33000B30C98 /* Constant.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A688DC7625D3C50A00B30C98 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A688DC7725D3C52900B30C98 /* GoogleService-Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A688DC7925D3C7F300B30C98 /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				A688DC7A25D3C80400B30C98 /* UserProfile.swift */,
+			);
+			path = Commen;
+			sourceTree = "<group>";
+		};
+		A688DC7C25D3D2B500B30C98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6448AE525D5304700323958 /* ColorCell */,
+				A688DC8425D400B100B30C98 /* XIB */,
+				A688DC7D25D3D2D700B30C98 /* ForgetPasswordViewController.swift */,
+				A688DC4425D3BB0500B30C98 /* ViewController.swift */,
+				A688DC7F25D3D42500B30C98 /* LoginViewController.swift */,
+				A688DC8125D3D45100B30C98 /* ResetPasswordViewController.swift */,
+				A6448AD025D493A500323958 /* AddMemoViewController.swift */,
+				A6448AD225D4A30900323958 /* MemosViewController.swift */,
+				A6448AE125D5244A00323958 /* MemoBooksViewController.swift */,
+				A6448AE325D52B7700323958 /* FirstViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A688DC8425D400B100B30C98 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				A6448ADC25D51FB600323958 /* MemoBook */,
+				A688DC9325D40CD600B30C98 /* MemosList */,
+				A688DC8E25D40B7F00B30C98 /* ColorCell */,
+				A688DC8525D400C100B30C98 /* StarredMemoCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		A688DC8525D400C100B30C98 /* StarredMemoCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6448AD425D4A66700323958 /* AddNewNoteCollectionViewCell.swift */,
+				A6448AD525D4A66700323958 /* AddNewNoteCollectionViewCell.xib */,
+				A6448AD825D4B21600323958 /* NoteCollectionViewCell.swift */,
+				A6448AD925D4B21600323958 /* NoteCollectionViewCell.xib */,
+			);
+			path = StarredMemoCell;
+			sourceTree = "<group>";
+		};
+		A688DC8E25D40B7F00B30C98 /* ColorCell */ = {
+			isa = PBXGroup;
+			children = (
+				A688DC8F25D40BCA00B30C98 /* ColorCollectionViewCell.swift */,
+				A688DC9025D40BCA00B30C98 /* ColorCollectionViewCell.xib */,
+			);
+			path = ColorCell;
+			sourceTree = "<group>";
+		};
+		A688DC9325D40CD600B30C98 /* MemosList */ = {
+			isa = PBXGroup;
+			children = (
+				A688DC9425D40DAD00B30C98 /* MemosListTableViewCell.swift */,
+				A688DC9525D40DAD00B30C98 /* MemosListTableViewCell.xib */,
+			);
+			path = MemosList;
+			sourceTree = "<group>";
+		};
+		A6F5CC8A25D8321200952B2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6F5CC8B25D8323300952B2B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A991EAF4CE12D19D2F7690D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E424A6D54C83D4625FE30230 /* Pods_MemoKeep.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A688DC5425D3BB0B00B30C98 /* Build configuration list for PBXNativeTarget "MemoKeep" */;
 			buildPhases = (
+				E27DCA2C85D2A876C37528DE /* [CP] Check Pods Manifest.lock */,
 				A688DC3925D3BB0500B30C98 /* Sources */,
 				A688DC3A25D3BB0500B30C98 /* Frameworks */,
 				A688DC3B25D3BB0500B30C98 /* Resources */,
+				E3EEACEA937BFC5CE3F00109 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,23 +347,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6448AD725D4A66700323958 /* AddNewNoteCollectionViewCell.xib in Resources */,
+				A6448AE025D51FEF00323958 /* MemoBookTableViewCell.xib in Resources */,
 				A688DC5025D3BB0B00B30C98 /* LaunchScreen.storyboard in Resources */,
+				A688DC9725D40DAD00B30C98 /* MemosListTableViewCell.xib in Resources */,
+				A688DC7825D3C52900B30C98 /* GoogleService-Info.plist in Resources */,
 				A688DC4D25D3BB0B00B30C98 /* Assets.xcassets in Resources */,
 				A688DC4825D3BB0500B30C98 /* Main.storyboard in Resources */,
+				A6448ADB25D4B21600323958 /* NoteCollectionViewCell.xib in Resources */,
+				A688DC9225D40BCA00B30C98 /* ColorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E27DCA2C85D2A876C37528DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoKeep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EEACEA937BFC5CE3F00109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoKeep/Pods-MemoKeep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoKeep/Pods-MemoKeep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemoKeep/Pods-MemoKeep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A688DC3925D3BB0500B30C98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6448AD125D493A500323958 /* AddMemoViewController.swift in Sources */,
+				A688DC7025D3BF0A00B30C98 /* UIViewExtension.swift in Sources */,
+				A688DC6E25D3BF0A00B30C98 /* UINavigationBarExtension.swift in Sources */,
+				A688DC7E25D3D2D700B30C98 /* ForgetPasswordViewController.swift in Sources */,
+				A688DC6725D3BF0A00B30C98 /* UIlabelExtension.swift in Sources */,
+				A688DC7225D3BF0A00B30C98 /* UITextViewExtension.swift in Sources */,
+				A688DC9125D40BCA00B30C98 /* ColorCollectionViewCell.swift in Sources */,
+				A688DC6D25D3BF0A00B30C98 /* DateExtension.swift in Sources */,
+				A6448AD625D4A66700323958 /* AddNewNoteCollectionViewCell.swift in Sources */,
+				A688DC6B25D3BF0A00B30C98 /* UIButtonExtension.swift in Sources */,
+				A688DC6A25D3BF0A00B30C98 /* UITextFieldExtension.swift in Sources */,
 				A688DC4B25D3BB0500B30C98 /* MemoKeep.xcdatamodeld in Sources */,
+				A6448ADA25D4B21600323958 /* NoteCollectionViewCell.swift in Sources */,
+				A688DC6825D3BF0A00B30C98 /* HexColorExtension.swift in Sources */,
+				A6448AD325D4A30900323958 /* MemosViewController.swift in Sources */,
+				A688DC8325D3DA0400B30C98 /* LoginViewController.swift in Sources */,
+				A6448AE925D530C600323958 /* MemoColorCollectionViewCell.swift in Sources */,
+				A688DC6C25D3BF0A00B30C98 /* UIImageViewExtension.swift in Sources */,
+				A688DC5825D3BB3000B30C98 /* CustomTabBar.swift in Sources */,
+				A688DC7525D3C33000B30C98 /* Constant.swift in Sources */,
 				A688DC4525D3BB0500B30C98 /* ViewController.swift in Sources */,
 				A688DC4125D3BB0500B30C98 /* AppDelegate.swift in Sources */,
+				A688DC8225D3D45100B30C98 /* ResetPasswordViewController.swift in Sources */,
+				A688DC7B25D3C80400B30C98 /* UserProfile.swift in Sources */,
+				A6448AE225D5244A00323958 /* MemoBooksViewController.swift in Sources */,
+				A688DC6F25D3BF0A00B30C98 /* UIViewControllerExtension.swift in Sources */,
+				A688DC7125D3BF0A00B30C98 /* String.swift in Sources */,
 				A688DC4325D3BB0500B30C98 /* SceneDelegate.swift in Sources */,
+				A688DC7325D3BF0A00B30C98 /* UITabBarExtension.swift in Sources */,
+				A6448AE425D52B7700323958 /* FirstViewController.swift in Sources */,
+				A6F5CC8C25D8323300952B2B /* Model.swift in Sources */,
+				A688DC9625D40DAD00B30C98 /* MemosListTableViewCell.swift in Sources */,
+				A6448ADF25D51FEF00323958 /* MemoBookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +582,7 @@
 		};
 		A688DC5525D3BB0B00B30C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5503519A3EE9CF0453CF8EF0 /* Pods-MemoKeep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +600,7 @@
 		};
 		A688DC5625D3BB0B00B30C98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063CBAE9F90C780C636E66AA /* Pods-MemoKeep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
