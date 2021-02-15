@@ -24,27 +24,34 @@ struct User: Codable {
 }
 
 public struct MemoBook: Codable {
-
+    var id: String?
     let title: String
     let date: Date
     let memos: [Memo]?
-
 
     enum CodingKeys: String, CodingKey {
         case title
         case date
         case memos
+        case id
+    }
+    
+    init(_ obj : TMemoBook){
+        self.id = obj.id
+        self.title = obj.title
+        self.date = obj.date
+        self.memos = (obj.memo?.allObjects as? [TMemo] ?? []).map({Memo($0)})
     }
 }
 
 struct Memo: Codable {
-
+    
+    var id: String?
     let title: String
     let body: String?
     let date: Date
-    let isStarred: Bool = false
-    let color: Int = 0
-
+    let isStarred: Bool?
+    let color: Int
 
     enum CodingKeys: String, CodingKey {
         case title
@@ -52,5 +59,10 @@ struct Memo: Codable {
         case date
         case isStarred
         case color
+        case id
+    }
+    
+    init(_ obj : TMemo) {
+        //self.id = obj.id
     }
 }

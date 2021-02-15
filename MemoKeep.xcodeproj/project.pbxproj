@@ -23,7 +23,6 @@
 		A688DC4325D3BB0500B30C98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4225D3BB0500B30C98 /* SceneDelegate.swift */; };
 		A688DC4525D3BB0500B30C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4425D3BB0500B30C98 /* ViewController.swift */; };
 		A688DC4825D3BB0500B30C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4625D3BB0500B30C98 /* Main.storyboard */; };
-		A688DC4B25D3BB0500B30C98 /* MemoKeep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A688DC4925D3BB0500B30C98 /* MemoKeep.xcdatamodeld */; };
 		A688DC4D25D3BB0B00B30C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4C25D3BB0B00B30C98 /* Assets.xcassets */; };
 		A688DC5025D3BB0B00B30C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4E25D3BB0B00B30C98 /* LaunchScreen.storyboard */; };
 		A688DC5825D3BB3000B30C98 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC5725D3BB3000B30C98 /* CustomTabBar.swift */; };
@@ -49,7 +48,17 @@
 		A688DC9225D40BCA00B30C98 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A688DC9025D40BCA00B30C98 /* ColorCollectionViewCell.xib */; };
 		A688DC9625D40DAD00B30C98 /* MemosListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688DC9425D40DAD00B30C98 /* MemosListTableViewCell.swift */; };
 		A688DC9725D40DAD00B30C98 /* MemosListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A688DC9525D40DAD00B30C98 /* MemosListTableViewCell.xib */; };
+		A6B831CB25DA33C70060DF7C /* MemoKeep.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = A688DC4925D3BB0500B30C98 /* MemoKeep.xcdatamodeld */; };
 		A6F5CC8C25D8323300952B2B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC8B25D8323300952B2B /* Model.swift */; };
+		A6F5CC9025D89C6000952B2B /* RefPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC8F25D89C5F00952B2B /* RefPaths.swift */; };
+		A6F5CC9225D8A2F900952B2B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9125D8A2F900952B2B /* MainNavigationController.swift */; };
+		A6F5CC9425D8F88600952B2B /* MemosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9325D8F88600952B2B /* MemosListViewController.swift */; };
+		A6F5CC9C25DA23BB00952B2B /* TMemo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9625DA23BB00952B2B /* TMemo+CoreDataClass.swift */; };
+		A6F5CC9D25DA23BB00952B2B /* TMemo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9725DA23BB00952B2B /* TMemo+CoreDataProperties.swift */; };
+		A6F5CC9E25DA23BB00952B2B /* TMemoBook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9825DA23BB00952B2B /* TMemoBook+CoreDataClass.swift */; };
+		A6F5CC9F25DA23BB00952B2B /* TMemoBook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9925DA23BB00952B2B /* TMemoBook+CoreDataProperties.swift */; };
+		A6F5CCA025DA23BB00952B2B /* TUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9A25DA23BB00952B2B /* TUser+CoreDataClass.swift */; };
+		A6F5CCA125DA23BB00952B2B /* TUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5CC9B25DA23BB00952B2B /* TUser+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +108,15 @@
 		A688DC9425D40DAD00B30C98 /* MemosListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosListTableViewCell.swift; sourceTree = "<group>"; };
 		A688DC9525D40DAD00B30C98 /* MemosListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemosListTableViewCell.xib; sourceTree = "<group>"; };
 		A6F5CC8B25D8323300952B2B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A6F5CC8F25D89C5F00952B2B /* RefPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefPaths.swift; sourceTree = "<group>"; };
+		A6F5CC9125D8A2F900952B2B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		A6F5CC9325D8F88600952B2B /* MemosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosListViewController.swift; sourceTree = "<group>"; };
+		A6F5CC9625DA23BB00952B2B /* TMemo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TMemo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A6F5CC9725DA23BB00952B2B /* TMemo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TMemo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A6F5CC9825DA23BB00952B2B /* TMemoBook+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TMemoBook+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A6F5CC9925DA23BB00952B2B /* TMemoBook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TMemoBook+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A6F5CC9A25DA23BB00952B2B /* TUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A6F5CC9B25DA23BB00952B2B /* TUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		E424A6D54C83D4625FE30230 /* Pods_MemoKeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoKeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				A688DC7A25D3C80400B30C98 /* UserProfile.swift */,
+				A6F5CC8F25D89C5F00952B2B /* RefPaths.swift */,
 			);
 			path = Commen;
 			sourceTree = "<group>";
@@ -227,6 +246,8 @@
 				A6448AD225D4A30900323958 /* MemosViewController.swift */,
 				A6448AE125D5244A00323958 /* MemoBooksViewController.swift */,
 				A6448AE325D52B7700323958 /* FirstViewController.swift */,
+				A6F5CC9125D8A2F900952B2B /* MainNavigationController.swift */,
+				A6F5CC9325D8F88600952B2B /* MemosListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -274,6 +295,12 @@
 		A6F5CC8A25D8321200952B2B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6F5CC9625DA23BB00952B2B /* TMemo+CoreDataClass.swift */,
+				A6F5CC9725DA23BB00952B2B /* TMemo+CoreDataProperties.swift */,
+				A6F5CC9825DA23BB00952B2B /* TMemoBook+CoreDataClass.swift */,
+				A6F5CC9925DA23BB00952B2B /* TMemoBook+CoreDataProperties.swift */,
+				A6F5CC9A25DA23BB00952B2B /* TUser+CoreDataClass.swift */,
+				A6F5CC9B25DA23BB00952B2B /* TUser+CoreDataProperties.swift */,
 				A6F5CC8B25D8323300952B2B /* Model.swift */,
 			);
 			path = Model;
@@ -299,6 +326,7 @@
 				A688DC3A25D3BB0500B30C98 /* Frameworks */,
 				A688DC3B25D3BB0500B30C98 /* Resources */,
 				E3EEACEA937BFC5CE3F00109 /* [CP] Embed Pods Frameworks */,
+				A6F5CC9525D95EA300952B2B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -347,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B831CB25DA33C70060DF7C /* MemoKeep.xcdatamodeld in Resources */,
 				A6448AD725D4A66700323958 /* AddNewNoteCollectionViewCell.xib in Resources */,
 				A6448AE025D51FEF00323958 /* MemoBookTableViewCell.xib in Resources */,
 				A688DC5025D3BB0B00B30C98 /* LaunchScreen.storyboard in Resources */,
@@ -362,6 +391,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A6F5CC9525D95EA300952B2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		E27DCA2C85D2A876C37528DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,17 +456,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6448AD125D493A500323958 /* AddMemoViewController.swift in Sources */,
+				A6F5CCA125DA23BB00952B2B /* TUser+CoreDataProperties.swift in Sources */,
+				A6F5CC9E25DA23BB00952B2B /* TMemoBook+CoreDataClass.swift in Sources */,
 				A688DC7025D3BF0A00B30C98 /* UIViewExtension.swift in Sources */,
 				A688DC6E25D3BF0A00B30C98 /* UINavigationBarExtension.swift in Sources */,
+				A6F5CC9C25DA23BB00952B2B /* TMemo+CoreDataClass.swift in Sources */,
 				A688DC7E25D3D2D700B30C98 /* ForgetPasswordViewController.swift in Sources */,
 				A688DC6725D3BF0A00B30C98 /* UIlabelExtension.swift in Sources */,
 				A688DC7225D3BF0A00B30C98 /* UITextViewExtension.swift in Sources */,
 				A688DC9125D40BCA00B30C98 /* ColorCollectionViewCell.swift in Sources */,
+				A6F5CC9D25DA23BB00952B2B /* TMemo+CoreDataProperties.swift in Sources */,
 				A688DC6D25D3BF0A00B30C98 /* DateExtension.swift in Sources */,
 				A6448AD625D4A66700323958 /* AddNewNoteCollectionViewCell.swift in Sources */,
 				A688DC6B25D3BF0A00B30C98 /* UIButtonExtension.swift in Sources */,
 				A688DC6A25D3BF0A00B30C98 /* UITextFieldExtension.swift in Sources */,
-				A688DC4B25D3BB0500B30C98 /* MemoKeep.xcdatamodeld in Sources */,
 				A6448ADA25D4B21600323958 /* NoteCollectionViewCell.swift in Sources */,
 				A688DC6825D3BF0A00B30C98 /* HexColorExtension.swift in Sources */,
 				A6448AD325D4A30900323958 /* MemosViewController.swift in Sources */,
@@ -430,16 +480,21 @@
 				A688DC7525D3C33000B30C98 /* Constant.swift in Sources */,
 				A688DC4525D3BB0500B30C98 /* ViewController.swift in Sources */,
 				A688DC4125D3BB0500B30C98 /* AppDelegate.swift in Sources */,
+				A6F5CC9F25DA23BB00952B2B /* TMemoBook+CoreDataProperties.swift in Sources */,
 				A688DC8225D3D45100B30C98 /* ResetPasswordViewController.swift in Sources */,
 				A688DC7B25D3C80400B30C98 /* UserProfile.swift in Sources */,
+				A6F5CC9425D8F88600952B2B /* MemosListViewController.swift in Sources */,
 				A6448AE225D5244A00323958 /* MemoBooksViewController.swift in Sources */,
+				A6F5CC9225D8A2F900952B2B /* MainNavigationController.swift in Sources */,
 				A688DC6F25D3BF0A00B30C98 /* UIViewControllerExtension.swift in Sources */,
 				A688DC7125D3BF0A00B30C98 /* String.swift in Sources */,
 				A688DC4325D3BB0500B30C98 /* SceneDelegate.swift in Sources */,
+				A6F5CCA025DA23BB00952B2B /* TUser+CoreDataClass.swift in Sources */,
 				A688DC7325D3BF0A00B30C98 /* UITabBarExtension.swift in Sources */,
 				A6448AE425D52B7700323958 /* FirstViewController.swift in Sources */,
 				A6F5CC8C25D8323300952B2B /* Model.swift in Sources */,
 				A688DC9625D40DAD00B30C98 /* MemosListTableViewCell.swift in Sources */,
+				A6F5CC9025D89C6000952B2B /* RefPaths.swift in Sources */,
 				A6448ADF25D51FEF00323958 /* MemoBookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,8 @@ class MemoBookTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblDate: UILabel!
     
+    var object: MemoBook?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,6 +28,11 @@ class MemoBookTableViewCell: UITableViewCell {
     }
     
     func configureCell() {
+        
+        if let obj = self.object {
+            lblTitle.text = obj.title
+            lblDate.text = obj.date.toString(customFormat: "MMM d, yyyy")
+        }
         
     }
     

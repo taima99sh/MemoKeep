@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import SVProgressHUD
+import MagicalRecord
 
 class LoginViewController: UIViewController {
     
@@ -22,7 +23,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var btnToRigester: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -37,7 +37,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnLogin(_ sender: Any) {
-        guard self.validation() else {return}
+        
+        //guard self.validation() else {return}
         let email =  txtEmail.text ?? ""
         let password = txtPassword.text ?? ""
         showLoader(true)
@@ -48,13 +49,15 @@ class LoginViewController: UIViewController {
                 return
             }
             if let authResult = authResult {
-                print("success")
+                UserProfile.shared.userID = authResult.user.uid
+                let user = TUser.mr_createEntity()
+                user?.id = UserProfile.shared.userID ?? ""
+                NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
             }
-            
-          //guard let strongSelf = self else { return }
-          // ...
         }
     }
+    
+    
     @IBAction func btnToRigester(_ sender: Any) {
         
         let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "ViewController")
@@ -74,7 +77,7 @@ extension LoginViewController {
 
 extension LoginViewController {
     func validation() -> Bool {
-        if (txtEmail.isValidValue && txtPassword.isValidValue && Emailvalidation()) == false {
+        if !(txtEmail.isValidValue && txtPassword.isValidValue && Emailvalidation()) == false {
             self.ErrorMessage(title: "", errorbody: "There are empty fields")
             return false
         }

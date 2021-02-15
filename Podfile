@@ -13,6 +13,10 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'IQKeyboardManagerSwift', '6.5.0'
 pod 'SVProgressHUD'
-pod 'Firebase/Firestore'
+#pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
+pod 'DropDown'
+pod 'MagicalRecord', '2.3.2'
+pod 'Firebase/Crashlytics'
 
 end

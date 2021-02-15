@@ -9,7 +9,8 @@
 import UIKit
 import FirebaseAuth
 import SVProgressHUD
-
+import FirebaseFirestoreSwift
+import Firebase
 class ViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnRegister(_ sender: Any) {
+        guard validation() else {return}
         createUser()
     }
     
@@ -34,8 +36,11 @@ class ViewController: UIViewController {
 
 extension ViewController {
         func createUser() {
+            let db = Firestore.firestore()
             let email = txtEmail.text ?? ""
             let password = txtPassword.text ?? ""
+             let userRef = db.collection("users").document(UserProfile.shared.userID ?? "")
+             let memoBooksRef = userRef.collection("MemoBooks")
             SVProgressHUD.show()
             Auth.auth().createUser(withEmail: email, password: password) { (data, error) in
                 SVProgressHUD.dismiss()
@@ -44,6 +49,17 @@ extension ViewController {
                     return
                 }
                 self.SuccessMessage(title: "", successbody: "you have signed up successfully")
+                
+                if let authResult = data {
+                    UserProfile.shared.userID = authResult.user.uid
+                    let user = User(name: "x", email: email, memoBooks: nil)
+                    
+                    do {
+                        try userRef.setData(from: user)
+                    } catch let error {
+                        print("Error writing user to Firestore: \(error.localizedDescription)")
+                    }
+                }
             }
     }
 }

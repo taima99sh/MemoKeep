@@ -12,10 +12,13 @@ import Firebase
 import IQKeyboardManagerSwift
 import FirebaseCore
 import FirebaseFirestore
+import MagicalRecord
 
 extension UIStoryboard{
    static let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
 }
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -27,15 +30,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var rootNavigationViewController: UINavigationController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
-        let db = Firestore.firestore()
-        let userRef = db.collection("users").document("iLICnOG5msxgCdTm3f48").collection("MemoBooks").document("3fsl0SVBwpQnffouZTrD")
         
-        userRef.getDocument { (document, error) in
-            
+        MagicalRecord.setupCoreDataStack(withStoreNamed: "MemoStack")
+        
+        let db = Firestore.firestore()
+        
+        if Reachability.isConnectedToNetwork(){
+            print("Internet Connection Available!")
+             print("Internet Connection Available!")
+        }else{
+            print("Internet Connection not Available!")
+            print("Internet Connection Available!")
         }
         return true
         ///#########################
@@ -128,21 +138,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-public struct City: Codable {
 
-    let name: String
-    let state: String?
-    let country: String?
-    let isCapital: Bool?
-    let population: Int64?
-
-    enum CodingKeys: String, CodingKey {
-        case name
-        case state
-        case country
-        case isCapital = "capital"
-        case population
-    }
-
-}
 

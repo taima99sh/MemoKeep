@@ -94,12 +94,17 @@
                     <real key="value" value="0.14999999999999999"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="colorView" destination="FoV-aq-qBy" id="THy-BV-Qwh"/>
+                <outlet property="lblBody" destination="9Ff-JC-wS6" id="PIf-6R-TsK"/>
+                <outlet property="lblTitle" destination="I23-VV-KUr" id="Q8e-0Q-eBx"/>
+            </connections>
             <point key="canvasLocation" x="13.768115942028986" y="123.21428571428571"/>
         </collectionViewCell>
     </objects>
     <resources>
         <namedColor name="Color">
-            <color red="0.8155385852" green="0.18789809939999999" blue="0.1695132852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81599998474121094" green="0.18799999356269836" blue="0.17000000178813934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

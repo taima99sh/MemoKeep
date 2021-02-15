@@ -12,13 +12,13 @@ import FirebaseAuth
 class UserProfile {
     static let shared = UserProfile()
     
-    // get Phone number from user
-    var mobileNumber: String? {
+    // get userID
+    var userID: String? {
         get {
-            return UserDefaults.standard.value(forKey: "mobileNumber") as? String
+            return UserDefaults.standard.value(forKey: "userID") as? String
         }
         set {
-            UserDefaults.standard.setValue(newValue, forKey: "mobileNumber")
+            UserDefaults.standard.setValue(newValue, forKey: "userID")
             UserDefaults.standard.synchronize()
         }
     }

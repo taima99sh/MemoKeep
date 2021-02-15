@@ -9,6 +9,13 @@
 import UIKit
 
 class MemosListTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblBody: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    
+    
+    var object: Memo?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +26,14 @@ class MemosListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell() {
+        if let obj = self.object {
+            lblTitle.text = obj.title
+            lblBody.text = obj.body ?? ""
+            lblDate.text = obj.date.toString(customFormat: "MMM d, yyyy")
+        }
     }
     
 }

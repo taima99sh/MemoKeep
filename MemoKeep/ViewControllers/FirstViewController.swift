@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class FirstViewController: UIViewController {
     
@@ -35,19 +37,25 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func btnMemosTab(_ sender: Any) {
-        for sView in self.containerView.subviews {
-            sView.removeFromSuperview()
-        }
-        if vc1Active == true {
-
-            vc1Active = false
-            vc2.view.frame = self.containerView.bounds
-            self.containerView.addSubview(vc2.view)
-
-        } else {
+         if !vc1Active  {
+            for sView in self.containerView.subviews {
+                sView.removeFromSuperview()
+            }
             vc1Active = true
             vc1.view.frame = self.containerView.bounds
             self.containerView.addSubview(vc1.view)
+        }
+    }
+    
+    @IBAction func btnMemoBooks(_ sender: Any) {
+        if vc1Active == true {
+            for sView in self.containerView.subviews {
+                sView.removeFromSuperview()
+            }
+        vc1Active = false
+        vc2.view.frame = self.containerView.bounds
+            self.containerView.addSubview(vc2.view)
+            
         }
     }
 }
@@ -67,6 +75,37 @@ extension FirstViewController {
         vc1Active = true
     }
     func fetchData(){
-        
+        let db = Firestore.firestore()
+         let userRef = db.collection("users").document(UserProfile.shared.userID ?? "")
+         let memoBooksRef = userRef.collection("MemoBooks")
+         memoBooksRef.getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            if let querySnapshot = querySnapshot {
+                Constant.shared.memoBooks.removeAll()
+                for doc in querySnapshot.documents {
+                    ///
+                    let result = Result {
+                        try doc.data(as: MemoBook.self)
+                    }
+                    switch result {
+                    case .success(var memoBook):
+                        memoBook?.id = doc.documentID
+                        if let memoBook = memoBook {
+                            Constant.shared.memoBooks.append(memoBook)
+                            print("\(memoBook.title)")
+                        } else {
+                            print("Document does not exist")
+                        }
+                    case .failure(let error):
+                        print("Error decoding memoBook: \(error)")
+                    }
+                }
+            }
+        }
+    }
+    func getStarredMemos(){
     }
 }
